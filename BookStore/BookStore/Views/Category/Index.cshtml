@@ -1,0 +1,44 @@
+﻿@model List<BookStore.Contract.ResponseModels.CategoryResponseModel>
+
+@{
+    ViewData["Title"] = "Category";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Category</h1>
+</div>
+
+<p>
+    <a asp-action="Create">Create New Category</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Category Name
+            </th>
+            <th>
+                Description
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.CategoryId">@Html.DisplayFor(modelItem => item.CategoryName)</a>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    <a asp-action="Update" asp-route-id="@item.CategoryId">Update</a> |
+                    <a asp-action="Delete" asp-route-id="@item.CategoryId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

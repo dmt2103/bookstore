@@ -1,0 +1,17 @@
+C:\Users\dmtien\source\repos\BookStore\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Service.deps.json
+C:\Users\dmtien\source\repos\BookStore\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Service.dll
+C:\Users\dmtien\source\repos\BookStore\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Service.pdb
+C:\Users\dmtien\source\repos\BookStore\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Contract.dll
+C:\Users\dmtien\source\repos\BookStore\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Domain.dll
+C:\Users\dmtien\source\repos\BookStore\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Repository.dll
+C:\Users\dmtien\source\repos\BookStore\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Contract.pdb
+C:\Users\dmtien\source\repos\BookStore\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Domain.pdb
+C:\Users\dmtien\source\repos\BookStore\BookStore.Service\bin\Debug\netcoreapp3.1\BookStore.Repository.pdb
+C:\Users\dmtien\source\repos\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.csproj.AssemblyReference.cache
+C:\Users\dmtien\source\repos\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dmtien\source\repos\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.AssemblyInfoInputs.cache
+C:\Users\dmtien\source\repos\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.AssemblyInfo.cs
+C:\Users\dmtien\source\repos\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.csproj.CoreCompileInputs.cache
+C:\Users\dmtien\source\repos\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.csproj.CopyComplete
+C:\Users\dmtien\source\repos\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.dll
+C:\Users\dmtien\source\repos\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.pdb
