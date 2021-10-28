@@ -5829,11 +5829,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dmtien\\source\\repos\\BookStore\\BookStore.Service\\BookStore.Service.csproj",
+      "projectUniqueName": "D:\\Projects\\bookstore\\BookStore\\BookStore.Service\\BookStore.Service.csproj",
       "projectName": "BookStore.Service",
-      "projectPath": "C:\\Users\\dmtien\\source\\repos\\BookStore\\BookStore.Service\\BookStore.Service.csproj",
+      "projectPath": "D:\\Projects\\bookstore\\BookStore\\BookStore.Service\\BookStore.Service.csproj",
       "packagesPath": "C:\\Users\\dmtien\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dmtien\\source\\repos\\BookStore\\BookStore.Service\\obj\\",
+      "outputPath": "D:\\Projects\\bookstore\\BookStore\\BookStore.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dmtien\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5850,14 +5850,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\dmtien\\source\\repos\\BookStore\\BookStore.Contract\\BookStore.Contract.csproj": {
-              "projectPath": "C:\\Users\\dmtien\\source\\repos\\BookStore\\BookStore.Contract\\BookStore.Contract.csproj"
+            "D:\\Projects\\bookstore\\BookStore\\BookStore.Contract\\BookStore.Contract.csproj": {
+              "projectPath": "D:\\Projects\\bookstore\\BookStore\\BookStore.Contract\\BookStore.Contract.csproj"
             },
-            "C:\\Users\\dmtien\\source\\repos\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {
-              "projectPath": "C:\\Users\\dmtien\\source\\repos\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj"
+            "D:\\Projects\\bookstore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {
+              "projectPath": "D:\\Projects\\bookstore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj"
             },
-            "C:\\Users\\dmtien\\source\\repos\\BookStore\\BookStore.Repository\\BookStore.Repository.csproj": {
-              "projectPath": "C:\\Users\\dmtien\\source\\repos\\BookStore\\BookStore.Repository\\BookStore.Repository.csproj"
+            "D:\\Projects\\bookstore\\BookStore\\BookStore.Repository\\BookStore.Repository.csproj": {
+              "projectPath": "D:\\Projects\\bookstore\\BookStore\\BookStore.Repository\\BookStore.Repository.csproj"
             }
           }
         }

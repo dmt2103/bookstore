@@ -5834,11 +5834,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dmtien\\source\\repos\\BookStore\\BookStore.Repository\\BookStore.Repository.csproj",
+      "projectUniqueName": "D:\\Projects\\bookstore\\BookStore\\BookStore.Repository\\BookStore.Repository.csproj",
       "projectName": "BookStore.Repository",
-      "projectPath": "C:\\Users\\dmtien\\source\\repos\\BookStore\\BookStore.Repository\\BookStore.Repository.csproj",
+      "projectPath": "D:\\Projects\\bookstore\\BookStore\\BookStore.Repository\\BookStore.Repository.csproj",
       "packagesPath": "C:\\Users\\dmtien\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dmtien\\source\\repos\\BookStore\\BookStore.Repository\\obj\\",
+      "outputPath": "D:\\Projects\\bookstore\\BookStore\\BookStore.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dmtien\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5855,11 +5855,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\dmtien\\source\\repos\\BookStore\\BookStore.Contract\\BookStore.Contract.csproj": {
-              "projectPath": "C:\\Users\\dmtien\\source\\repos\\BookStore\\BookStore.Contract\\BookStore.Contract.csproj"
+            "D:\\Projects\\bookstore\\BookStore\\BookStore.Contract\\BookStore.Contract.csproj": {
+              "projectPath": "D:\\Projects\\bookstore\\BookStore\\BookStore.Contract\\BookStore.Contract.csproj"
             },
-            "C:\\Users\\dmtien\\source\\repos\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {
-              "projectPath": "C:\\Users\\dmtien\\source\\repos\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj"
+            "D:\\Projects\\bookstore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {
+              "projectPath": "D:\\Projects\\bookstore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj"
             }
           }
         }

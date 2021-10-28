@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eyETxjRTjOJQOGV1F0KusQcA1kJCK2qvfKCawTo6o3ZsPynQ17olAaE888dOfFpTK5yamdDdquRiL0onDm7DBA==",
+  "dgSpecHash": "UeXPx8rtn7JGQM3/HkXYW3RAMN/nEKoMP4e72f0XYLDyW3y1tbAzDnk6nOABmTz0jo+z0FDBWperMV/hfHoNZg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dmtien\\source\\repos\\BookStore\\BookStore.Repository\\BookStore.Repository.csproj",
+  "projectFilePath": "D:\\Projects\\bookstore\\BookStore\\BookStore.Repository\\BookStore.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dmtien\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\dmtien\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

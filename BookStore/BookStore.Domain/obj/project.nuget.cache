@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UKGvRkcFyfpHQWXw0LN7uX4UFEccIUFgEKKOj5zPNd9SsmK3+jTK8nFxraQkUTlupUy+dWO574hcRpAv7hUYkg==",
+  "dgSpecHash": "ql01VDRHZ4McPiii9e2xF8BTdU3FjOSh52fVKU9lDXMXbTepINOi/PLItFqNr6RDUmk8KjUY1oAEDabtEAO7Tw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dmtien\\source\\repos\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj",
+  "projectFilePath": "D:\\Projects\\bookstore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

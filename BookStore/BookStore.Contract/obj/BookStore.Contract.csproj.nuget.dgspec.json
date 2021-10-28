@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dmtien\\source\\repos\\BookStore\\BookStore.Contract\\BookStore.Contract.csproj": {}
+    "D:\\Projects\\bookstore\\BookStore\\BookStore.Contract\\BookStore.Contract.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dmtien\\source\\repos\\BookStore\\BookStore.Contract\\BookStore.Contract.csproj": {
+    "D:\\Projects\\bookstore\\BookStore\\BookStore.Contract\\BookStore.Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dmtien\\source\\repos\\BookStore\\BookStore.Contract\\BookStore.Contract.csproj",
+        "projectUniqueName": "D:\\Projects\\bookstore\\BookStore\\BookStore.Contract\\BookStore.Contract.csproj",
         "projectName": "BookStore.Contract",
-        "projectPath": "C:\\Users\\dmtien\\source\\repos\\BookStore\\BookStore.Contract\\BookStore.Contract.csproj",
+        "projectPath": "D:\\Projects\\bookstore\\BookStore\\BookStore.Contract\\BookStore.Contract.csproj",
         "packagesPath": "C:\\Users\\dmtien\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dmtien\\source\\repos\\BookStore\\BookStore.Contract\\obj\\",
+        "outputPath": "D:\\Projects\\bookstore\\BookStore\\BookStore.Contract\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dmtien\\AppData\\Roaming\\NuGet\\NuGet.Config",
