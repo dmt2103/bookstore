@@ -1,7 +1,68 @@
-﻿@{
+﻿@model List<BookStore.Contract.ResponseModels.BookResponseModel>
+
+@{
     ViewData["Title"] = "Home";
 }
 
 <div class="text-center">
     <h1 class="display-4">Book Store</h1>
 </div>
+
+<p>
+    <a asp-action="Create">Create New Book</a>
+</p>
+<form asp-controller="Home" asp-action="Index" method="get">
+    <p>
+        Book Name <input type="text" name="searchString" />
+        <input type="submit" value="Search" />
+    </p>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Book Name
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Author
+            </th>
+            <th>
+                Publish Date
+            </th>
+            <th>
+                Category
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.BookId">@Html.DisplayFor(modelItem => item.BookName)</a>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Author)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PublishDate)
+                </td>
+                <td>
+                    <a asp-controller="Category" asp-action="Details" asp-route-id="@item.CategoryId">@Html.DisplayFor(modelItem => item.Category.CategoryName)</a>
+                </td>
+                <td>
+                    <a asp-action="Update" asp-route-id="@item.CategoryId">Update</a> |
+                    <a asp-action="Delete" asp-route-id="@item.CategoryId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

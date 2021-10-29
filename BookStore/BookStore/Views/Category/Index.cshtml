@@ -11,6 +11,12 @@
 <p>
     <a asp-action="Create">Create New Category</a>
 </p>
+<form asp-controller="Category" asp-action="Index" method="get">
+    <p>
+        Category Name <input type="text" name="searchString" />
+        <input type="submit" value="Search" />
+    </p>
+</form>
 
 <table class="table">
     <thead>

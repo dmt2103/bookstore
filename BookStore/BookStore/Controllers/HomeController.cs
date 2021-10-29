@@ -1,33 +1,46 @@
-﻿using BookStore.Models;
+﻿using BookStore.Contract.RequestModels;
+using BookStore.Service.Book;
+using BookStore.Service.Category;
+using BookStore.Service.Tag;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using System.Diagnostics;
 
 namespace BookStore.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IBookService _bookService;
+        private readonly ICategoryService _categoryService;
+        private readonly ITagService _tagService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IBookService bookService, ICategoryService categoryService, ITagService tagService)
         {
-            _logger = logger;
+            _bookService = bookService;
+            _categoryService = categoryService;
+            _tagService = tagService;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string searchString)
         {
+            var listBook = _bookService.GetAllBooks(searchString);
+
+            return View(listBook);
+        }
+
+        public IActionResult Create()
+        {
+            ViewBag.CategoryList = _categoryService.GetAllCategories(string.Empty);
+
             return View();
         }
 
-        public IActionResult Privacy()
+        [HttpPost]
+        public IActionResult Create(BookRequestModel book)
         {
-            return View();
-        }
+            if (!ModelState.IsValid) return View(book);
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            _bookService.CreateBook(book);
+
+            return RedirectToAction(nameof(Index));
         }
     }
 }

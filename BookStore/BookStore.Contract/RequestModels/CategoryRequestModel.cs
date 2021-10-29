@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace BookStore.Contract.RequestModels
 {
@@ -8,6 +7,5 @@ namespace BookStore.Contract.RequestModels
         public Guid CategoryId { get; set; }
         public string CategoryName { get; set; }
         public string Description { get; set; }
-        public ICollection<BookRequestModel> Books { get; set; }
     }
 }

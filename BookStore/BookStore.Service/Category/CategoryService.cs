@@ -1,9 +1,9 @@
-﻿using BookStore.Contract.RequestModels;
+﻿using AutoMapper;
+using BookStore.Contract.RequestModels;
 using BookStore.Contract.ResponseModels;
 using BookStore.Repository.Interfaces;
 using System;
 using System.Collections.Generic;
-using AutoMapper;
 
 namespace BookStore.Service.Category
 {
@@ -18,40 +18,41 @@ namespace BookStore.Service.Category
             _mapper = mapper;
         }
 
-        public List<CategoryResponseModel> GetAllCategories()
+        public List<CategoryResponseModel> GetAllCategories(string searchString)
         {
-            var res = _categoryRepository.GetAllCategories();
-            var allCategories = _mapper.Map<List<Domain.Models.Category>, List<CategoryResponseModel>>(res);
-            return allCategories;
+            var allCategories = _categoryRepository.GetAllCategories(searchString);
+            var response = _mapper.Map<List<Domain.Models.Category>, List<CategoryResponseModel>>(allCategories);
+
+            return response;
         }
 
         public CategoryResponseModel CreateCategory(CategoryRequestModel request)
         {
-            var req = _mapper.Map<CategoryRequestModel, Domain.Models.Category>(request);
-            var res = _categoryRepository.CreateCategory(req);
-            var category = _mapper.Map<Domain.Models.Category, CategoryResponseModel>(res);
-            return category;
+            var category = _categoryRepository.CreateCategory(request);
+            var response = _mapper.Map<Domain.Models.Category, CategoryResponseModel>(category);
+
+            return response;
         }
 
         public CategoryResponseModel GetCategory(Guid? request)
         {
-            var res = _categoryRepository.GetCategory(request);
-            var category = _mapper.Map<Domain.Models.Category, CategoryResponseModel>(res);
-            return category;
+            var category = _categoryRepository.GetCategory(request);
+            var response = _mapper.Map<Domain.Models.Category, CategoryResponseModel>(category);
+
+            return response;
         }
 
         public CategoryResponseModel UpdateCategory(CategoryRequestModel request)
         {
-            var req = _mapper.Map<CategoryRequestModel, Domain.Models.Category>(request);
-            var res = _categoryRepository.UpdateCategory(req);
-            var category = _mapper.Map<Domain.Models.Category, CategoryResponseModel>(res);
-            return category;
+            var category = _categoryRepository.UpdateCategory(request);
+            var response = _mapper.Map<Domain.Models.Category, CategoryResponseModel>(category);
+
+            return response;
         }
 
         public void DeleteCategory(Guid request)
         {
-            var category = _categoryRepository.GetCategory(request);
-            _categoryRepository.DeleteCategory(category);
+            _categoryRepository.DeleteCategory(request);
         }
     }
 }

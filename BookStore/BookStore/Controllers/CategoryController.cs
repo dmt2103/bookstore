@@ -14,9 +14,11 @@ namespace BookStore.Controllers
             _categoryService = categoryService;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string searchString)
         {
-            return View(_categoryService.GetAllCategories());
+            var listCategory = _categoryService.GetAllCategories(searchString);
+
+            return View(listCategory);
         }
 
         public IActionResult Create()
@@ -27,13 +29,15 @@ namespace BookStore.Controllers
         [HttpPost]
         public IActionResult Create(CategoryRequestModel category)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                _categoryService.CreateCategory(category);
-                return RedirectToAction(nameof(Index));
+
+                return View(category);
             }
 
-            return View(category);
+            _categoryService.CreateCategory(category);
+
+            return RedirectToAction(nameof(Index));
         }
 
         public IActionResult Details(Guid? id)
@@ -105,6 +109,7 @@ namespace BookStore.Controllers
         public IActionResult Delete(Guid id)
         {
             _categoryService.DeleteCategory(id);
+
             return RedirectToAction(nameof(Index));
         }
     }

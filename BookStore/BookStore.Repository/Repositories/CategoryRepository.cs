@@ -1,4 +1,5 @@
-﻿using BookStore.Domain.Models;
+﻿using BookStore.Contract.RequestModels;
+using BookStore.Domain.Models;
 using BookStore.Repository.Data;
 using BookStore.Repository.Interfaces;
 using System;
@@ -16,19 +17,31 @@ namespace BookStore.Repository.Repositories
             _context = context;
         }
 
-        public List<Category> GetAllCategories()
+        public List<Category> GetAllCategories(string searchString)
         {
-            var listCategory = _context.Categories.ToList();
-            return listCategory;
+            var listCategory = from c in _context.Categories select c;
+
+            if (!string.IsNullOrWhiteSpace(searchString))
+            {
+                listCategory = listCategory.Where(c => c.CategoryName.Contains(searchString));
+            }
+
+            return listCategory.ToList();
         }
 
-        public Category CreateCategory(Category category)
+        public Category CreateCategory(CategoryRequestModel request)
         {
-            category.CategoryId = Guid.NewGuid();
-            _context.Add(category);
+            var newCategory = new Category
+            {
+                CategoryId = Guid.NewGuid(),
+                CategoryName = request.CategoryName,
+                Description = request.Description
+            };
+
+            _context.Add(newCategory);
             _context.SaveChanges();
 
-            return category;
+            return newCategory;
         }
 
         public Category GetCategory(Guid? categoryId)
@@ -39,24 +52,32 @@ namespace BookStore.Repository.Repositories
             }
 
             var category = _context.Categories.Find(categoryId);
+
+            return category;
+        }
+
+        public Category UpdateCategory(CategoryRequestModel request)
+        {
+            var category = GetCategory(request.CategoryId);
+
             if (category == null)
             {
                 return null;
             }
 
-            return category;
-        }
+            category.CategoryName = request.CategoryName;
+            category.Description = request.Description;
 
-        public Category UpdateCategory(Category category)
-        {
             _context.Update(category);
             _context.SaveChanges();
 
             return category;
         }
 
-        public void DeleteCategory(Category category)
+        public void DeleteCategory(Guid? categoryId)
         {
+            var category = GetCategory(categoryId);
+            if (category == null) return;
             _context.Categories.Remove(category);
             _context.SaveChanges();
         }

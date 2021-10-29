@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using BookStore.Contract.RequestModels;
 using BookStore.Contract.ResponseModels;
 
 namespace BookStore.Service.AutoMappers
@@ -8,8 +7,9 @@ namespace BookStore.Service.AutoMappers
     {
         public MappingProfile()
         {
-            CreateMap<CategoryRequestModel, Domain.Models.Category>().ReverseMap();
             CreateMap<CategoryResponseModel, Domain.Models.Category>().ReverseMap();
+            CreateMap<BookResponseModel, Domain.Models.Book>().ReverseMap();
+            CreateMap<TagResponseModel, Domain.Models.Tag>().ReverseMap();
         }
     }
 }

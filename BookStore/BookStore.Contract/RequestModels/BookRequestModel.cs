@@ -11,7 +11,5 @@ namespace BookStore.Contract.RequestModels
         public string Author { get; set; }
         public DateTime PublishDate { get; set; }
         public Guid CategoryId { get; set; }
-        public CategoryRequestModel Category { get; set; }
-        public IEnumerable<BookTagRequestModel> BookTags { get; set; }
     }
 }
