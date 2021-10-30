@@ -68,7 +68,21 @@ namespace BookStore.Repository.Repositories
                 return null;
             }
 
-            var book = _context.Books.Find(bookId);
+            var book = _context.Books
+                .Join(
+                    _context.Categories,
+                    book => book.CategoryId,
+                    category => category.CategoryId,
+                    (book, category) => new Book()
+                    {
+                        BookId = book.BookId,
+                        BookName = book.BookName,
+                        Description = book.Description,
+                        Author = book.Author,
+                        PublishDate = book.PublishDate,
+                        CategoryId = book.CategoryId,
+                        Category = category
+                    }).FirstOrDefault(b => b.BookId.Equals(bookId));
 
             return book;
         }

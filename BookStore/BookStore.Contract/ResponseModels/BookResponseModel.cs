@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace BookStore.Contract.ResponseModels
 {
@@ -11,5 +12,6 @@ namespace BookStore.Contract.ResponseModels
         public DateTime PublishDate { get; set; }
         public Guid CategoryId { get; set; }
         public CategoryResponseModel Category { get; set; }
+        public IEnumerable<BookTagResponseModel> BookTags {get;set;}
     }
 }

@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\dmtien\\.nuget\\packages\\": {}
+    "C:\\Users\\dmt21\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\bookstore\\BookStore\\BookStore.Contract\\BookStore.Contract.csproj",
+      "projectUniqueName": "F:\\Projects\\bookstore\\BookStore\\BookStore.Contract\\BookStore.Contract.csproj",
       "projectName": "BookStore.Contract",
-      "projectPath": "D:\\Projects\\bookstore\\BookStore\\BookStore.Contract\\BookStore.Contract.csproj",
-      "packagesPath": "C:\\Users\\dmtien\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\bookstore\\BookStore\\BookStore.Contract\\obj\\",
+      "projectPath": "F:\\Projects\\bookstore\\BookStore\\BookStore.Contract\\BookStore.Contract.csproj",
+      "packagesPath": "C:\\Users\\dmt21\\.nuget\\packages\\",
+      "outputPath": "F:\\Projects\\bookstore\\BookStore\\BookStore.Contract\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dmtien\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dmt21\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

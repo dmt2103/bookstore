@@ -3,6 +3,7 @@ using BookStore.Service.Book;
 using BookStore.Service.Category;
 using BookStore.Service.Tag;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace BookStore.Controllers
 {
@@ -41,6 +42,22 @@ namespace BookStore.Controllers
             _bookService.CreateBook(book);
 
             return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult Details(Guid? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var book = _bookService.GetBook(id);
+            if (book == null)
+            {
+                return NotFound();
+            }
+
+            return View(book);
         }
     }
 }

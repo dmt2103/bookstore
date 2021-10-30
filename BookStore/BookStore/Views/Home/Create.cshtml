@@ -28,12 +28,12 @@
                 <span asp-validation-for="Author" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PublishDate" class="control-label"></label>
+                <label asp-for="PublishDate" class="control-label">Publish Date</label>
                 <input asp-for="PublishDate" class="form-control" />
                 <span asp-validation-for="PublishDate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="CategoryId" class="control-label"></label>
+                <label asp-for="CategoryId" class="control-label">Category Id</label>
                 <select asp-for="CategoryId" class="form-control" asp-items="@(new SelectList(@ViewBag.CategoryList,"CategoryId", "CategoryName"))"></select>
                 <span asp-validation-for="CategoryId" class="text-danger"></span>
             </div>

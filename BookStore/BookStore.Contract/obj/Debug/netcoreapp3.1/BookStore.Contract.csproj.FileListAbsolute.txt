@@ -17,3 +17,13 @@ D:\Projects\bookstore\BookStore\BookStore.Contract\obj\Debug\netcoreapp3.1\BookS
 D:\Projects\bookstore\BookStore\BookStore.Contract\obj\Debug\netcoreapp3.1\BookStore.Contract.csproj.CoreCompileInputs.cache
 D:\Projects\bookstore\BookStore\BookStore.Contract\obj\Debug\netcoreapp3.1\BookStore.Contract.dll
 D:\Projects\bookstore\BookStore\BookStore.Contract\obj\Debug\netcoreapp3.1\BookStore.Contract.pdb
+F:\Projects\bookstore\BookStore\BookStore.Contract\bin\Debug\netcoreapp3.1\BookStore.Contract.deps.json
+F:\Projects\bookstore\BookStore\BookStore.Contract\bin\Debug\netcoreapp3.1\BookStore.Contract.dll
+F:\Projects\bookstore\BookStore\BookStore.Contract\bin\Debug\netcoreapp3.1\BookStore.Contract.pdb
+F:\Projects\bookstore\BookStore\BookStore.Contract\obj\Debug\netcoreapp3.1\BookStore.Contract.csproj.AssemblyReference.cache
+F:\Projects\bookstore\BookStore\BookStore.Contract\obj\Debug\netcoreapp3.1\BookStore.Contract.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projects\bookstore\BookStore\BookStore.Contract\obj\Debug\netcoreapp3.1\BookStore.Contract.AssemblyInfoInputs.cache
+F:\Projects\bookstore\BookStore\BookStore.Contract\obj\Debug\netcoreapp3.1\BookStore.Contract.AssemblyInfo.cs
+F:\Projects\bookstore\BookStore\BookStore.Contract\obj\Debug\netcoreapp3.1\BookStore.Contract.csproj.CoreCompileInputs.cache
+F:\Projects\bookstore\BookStore\BookStore.Contract\obj\Debug\netcoreapp3.1\BookStore.Contract.dll
+F:\Projects\bookstore\BookStore\BookStore.Contract\obj\Debug\netcoreapp3.1\BookStore.Contract.pdb

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\bookstore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {}
+    "F:\\Projects\\bookstore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\bookstore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {
+    "F:\\Projects\\bookstore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\bookstore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj",
+        "projectUniqueName": "F:\\Projects\\bookstore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj",
         "projectName": "BookStore.Domain",
-        "projectPath": "D:\\Projects\\bookstore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj",
-        "packagesPath": "C:\\Users\\dmtien\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\bookstore\\BookStore\\BookStore.Domain\\obj\\",
+        "projectPath": "F:\\Projects\\bookstore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj",
+        "packagesPath": "C:\\Users\\dmt21\\.nuget\\packages\\",
+        "outputPath": "F:\\Projects\\bookstore\\BookStore\\BookStore.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dmtien\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dmt21\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

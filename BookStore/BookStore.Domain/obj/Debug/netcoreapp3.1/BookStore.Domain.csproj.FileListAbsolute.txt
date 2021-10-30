@@ -17,3 +17,13 @@ D:\Projects\bookstore\BookStore\BookStore.Domain\obj\Debug\netcoreapp3.1\BookSto
 D:\Projects\bookstore\BookStore\BookStore.Domain\obj\Debug\netcoreapp3.1\BookStore.Domain.csproj.CoreCompileInputs.cache
 D:\Projects\bookstore\BookStore\BookStore.Domain\obj\Debug\netcoreapp3.1\BookStore.Domain.dll
 D:\Projects\bookstore\BookStore\BookStore.Domain\obj\Debug\netcoreapp3.1\BookStore.Domain.pdb
+F:\Projects\bookstore\BookStore\BookStore.Domain\bin\Debug\netcoreapp3.1\BookStore.Domain.deps.json
+F:\Projects\bookstore\BookStore\BookStore.Domain\bin\Debug\netcoreapp3.1\BookStore.Domain.dll
+F:\Projects\bookstore\BookStore\BookStore.Domain\bin\Debug\netcoreapp3.1\BookStore.Domain.pdb
+F:\Projects\bookstore\BookStore\BookStore.Domain\obj\Debug\netcoreapp3.1\BookStore.Domain.csproj.AssemblyReference.cache
+F:\Projects\bookstore\BookStore\BookStore.Domain\obj\Debug\netcoreapp3.1\BookStore.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projects\bookstore\BookStore\BookStore.Domain\obj\Debug\netcoreapp3.1\BookStore.Domain.AssemblyInfoInputs.cache
+F:\Projects\bookstore\BookStore\BookStore.Domain\obj\Debug\netcoreapp3.1\BookStore.Domain.AssemblyInfo.cs
+F:\Projects\bookstore\BookStore\BookStore.Domain\obj\Debug\netcoreapp3.1\BookStore.Domain.csproj.CoreCompileInputs.cache
+F:\Projects\bookstore\BookStore\BookStore.Domain\obj\Debug\netcoreapp3.1\BookStore.Domain.dll
+F:\Projects\bookstore\BookStore\BookStore.Domain\obj\Debug\netcoreapp3.1\BookStore.Domain.pdb

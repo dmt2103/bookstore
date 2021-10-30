@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Category Detail";
+    var index = 0;
 }
 
 <div class="text-center">
@@ -11,7 +12,7 @@
 <div>
     <dl class="row">
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.CategoryName)
+            Category Name
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.CategoryName)
@@ -21,6 +22,24 @@
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt class="col-sm-2">
+            Book(s)
+        </dt>
+        <dd class="col-sm-10">
+            @if (!Model.Books.Any())
+            {
+                <p>There is no book that belongs to this category.</p>
+            }
+            @foreach (var item in Model.Books)
+            {
+                <a asp-controller="Home" asp-action="Details" asp-route-id="@item.BookId">@Html.DisplayFor(modelItem => item.BookName)</a>
+                index++;
+                if (index < Model.Books.Count())
+                {
+                    <br />
+                }
+            }
         </dd>
     </dl>
 </div>
