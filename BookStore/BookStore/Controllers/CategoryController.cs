@@ -17,6 +17,7 @@ namespace BookStore.Controllers
         public IActionResult Index(string searchString)
         {
             var listCategory = _categoryService.GetAllCategories(searchString);
+            ViewBag.Search = searchString;
 
             return View(listCategory);
         }

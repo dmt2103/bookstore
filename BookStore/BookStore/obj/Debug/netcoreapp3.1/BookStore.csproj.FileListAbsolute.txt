@@ -275,11 +275,14 @@ F:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Ca
 F:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Category\Index.cshtml.g.cs
 F:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Category\Update.cshtml.g.cs
 F:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Create.cshtml.g.cs
+F:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Delete.cshtml.g.cs
+F:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Details.cshtml.g.cs
 F:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 F:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Update.cshtml.g.cs
 F:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 F:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 F:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+F:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Tag\Create.cshtml.g.cs
 F:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Tag\Index.cshtml.g.cs
 F:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 F:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
@@ -290,5 +293,4 @@ F:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\BookStore.cspr
 F:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\BookStore.dll
 F:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\BookStore.pdb
 F:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\BookStore.genruntimeconfig.cache
-F:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Details.cshtml.g.cs
-F:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Tag\Create.cshtml.g.cs
+F:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Tag\Details.cshtml.g.cs

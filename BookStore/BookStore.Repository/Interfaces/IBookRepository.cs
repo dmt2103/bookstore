@@ -10,6 +10,7 @@ namespace BookStore.Repository.Interfaces
         List<Book> GetAllBooks(string searchString);
         Book CreateBook(BookRequestModel book);
         Book GetBook(Guid? bookId);
+        List<Book> GetBookByTagId(Guid? tagId);
         Book UpdateBook(BookRequestModel book);
         void DeleteBook(Guid bookId);
     }

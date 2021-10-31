@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace BookStore.Contract.ResponseModels
 {
@@ -6,5 +7,6 @@ namespace BookStore.Contract.ResponseModels
     {
         public Guid TagId { get; set; }
         public string TagName { get; set; }
+        public IEnumerable<BookResponseModel> Books { get; set; }
     }
 }

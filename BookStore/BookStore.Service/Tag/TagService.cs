@@ -28,11 +28,10 @@ namespace BookStore.Service.Tag
 
         public TagResponseModel CreateTag(TagRequestModel request)
         {
-            var req = _mapper.Map<TagRequestModel, Domain.Models.Tag>(request);
-            var res = _tagRepository.CreateTag(req);
-            var tag = _mapper.Map<Domain.Models.Tag, TagResponseModel>(res);
+            var tag = _tagRepository.CreateTag(request);
+            var response = _mapper.Map<Domain.Models.Tag, TagResponseModel>(tag);
 
-            return tag;
+            return response;
         }
 
         public TagResponseModel GetTag(Guid? request)

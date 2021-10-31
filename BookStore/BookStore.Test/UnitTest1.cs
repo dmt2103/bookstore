@@ -17,7 +17,7 @@ namespace BookStore.Test
 
             // Setup
 
-            var input = new Contract.RequestModels.CategoryRequestModel();
+            var input = new CategoryRequestModel();
             var response = new Contract.ResponseModels.CategoryResponseModel();
 
             mock.Setup(x => x.CreateCategory(input)).Returns(response);

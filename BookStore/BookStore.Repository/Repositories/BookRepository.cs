@@ -87,6 +87,26 @@ namespace BookStore.Repository.Repositories
             return book;
         }
 
+        public List<Book> GetBookByTagId(Guid? tagId)
+        {
+            if (tagId == null)
+            {
+                return null;
+            }
+
+            var listBook = (from book in _context.Books
+                            join bookTag in _context.BookTags
+                            on book.BookId equals bookTag.BookId
+                            where bookTag.TagId.Equals(tagId)
+                            select new Book()
+                            {
+                                BookId = book.BookId,
+                                BookName = book.BookName
+                            }).ToList();
+
+            return listBook;
+        }
+
         public Book UpdateBook(BookRequestModel request)
         {
             var book = GetBook(request.BookId);
@@ -96,10 +116,10 @@ namespace BookStore.Repository.Repositories
                 return null;
             }
 
-            book.BookName = request.BookName;
             book.Description = request.Description;
             book.Author = request.Author;
             book.PublishDate = request.PublishDate;
+            book.Category = null;
             book.CategoryId = request.CategoryId;
 
             _context.Update(book);

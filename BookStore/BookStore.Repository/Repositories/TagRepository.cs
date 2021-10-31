@@ -1,4 +1,5 @@
-﻿using BookStore.Domain.Models;
+﻿using BookStore.Contract.RequestModels;
+using BookStore.Domain.Models;
 using BookStore.Repository.Data;
 using BookStore.Repository.Interfaces;
 using System;
@@ -28,9 +29,14 @@ namespace BookStore.Repository.Repositories
             return listTag.ToList();
         }
 
-        public Tag CreateTag(Tag tag)
+        public Tag CreateTag(TagRequestModel request)
         {
-            tag.TagId = Guid.NewGuid();
+            var tag = new Tag
+            {
+                TagId = Guid.NewGuid(),
+                TagName = request.TagName
+            };
+
             _context.Add(tag);
             _context.SaveChanges();
 

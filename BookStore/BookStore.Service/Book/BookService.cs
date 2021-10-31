@@ -42,6 +42,14 @@ namespace BookStore.Service.Book
             return book;
         }
 
+        public List<BookResponseModel> GetBookByTagId(Guid? request)
+        {
+            var res = _bookRepository.GetBookByTagId(request);
+            var book = _mapper.Map<List<Domain.Models.Book>, List<BookResponseModel>>(res);
+
+            return book;
+        }
+
         public BookResponseModel UpdateBook(BookRequestModel request)
         {
             var book = _bookRepository.UpdateBook(request);

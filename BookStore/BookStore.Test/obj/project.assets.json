@@ -8782,19 +8782,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dmtien\\.nuget\\packages\\": {}
+    "C:\\Users\\dmt21\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\bookstore\\BookStore\\BookStore.Test\\BookStore.Test.csproj",
+      "projectUniqueName": "F:\\Projects\\bookstore\\BookStore\\BookStore.Test\\BookStore.Test.csproj",
       "projectName": "BookStore.Test",
-      "projectPath": "D:\\Projects\\bookstore\\BookStore\\BookStore.Test\\BookStore.Test.csproj",
-      "packagesPath": "C:\\Users\\dmtien\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\bookstore\\BookStore\\BookStore.Test\\obj\\",
+      "projectPath": "F:\\Projects\\bookstore\\BookStore\\BookStore.Test\\BookStore.Test.csproj",
+      "packagesPath": "C:\\Users\\dmt21\\.nuget\\packages\\",
+      "outputPath": "F:\\Projects\\bookstore\\BookStore\\BookStore.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dmtien\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dmt21\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8808,20 +8808,20 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Projects\\bookstore\\BookStore\\BookStore.Contract\\BookStore.Contract.csproj": {
-              "projectPath": "D:\\Projects\\bookstore\\BookStore\\BookStore.Contract\\BookStore.Contract.csproj"
+            "F:\\Projects\\bookstore\\BookStore\\BookStore.Contract\\BookStore.Contract.csproj": {
+              "projectPath": "F:\\Projects\\bookstore\\BookStore\\BookStore.Contract\\BookStore.Contract.csproj"
             },
-            "D:\\Projects\\bookstore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {
-              "projectPath": "D:\\Projects\\bookstore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj"
+            "F:\\Projects\\bookstore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {
+              "projectPath": "F:\\Projects\\bookstore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj"
             },
-            "D:\\Projects\\bookstore\\BookStore\\BookStore.Repository\\BookStore.Repository.csproj": {
-              "projectPath": "D:\\Projects\\bookstore\\BookStore\\BookStore.Repository\\BookStore.Repository.csproj"
+            "F:\\Projects\\bookstore\\BookStore\\BookStore.Repository\\BookStore.Repository.csproj": {
+              "projectPath": "F:\\Projects\\bookstore\\BookStore\\BookStore.Repository\\BookStore.Repository.csproj"
             },
-            "D:\\Projects\\bookstore\\BookStore\\BookStore.Service\\BookStore.Service.csproj": {
-              "projectPath": "D:\\Projects\\bookstore\\BookStore\\BookStore.Service\\BookStore.Service.csproj"
+            "F:\\Projects\\bookstore\\BookStore\\BookStore.Service\\BookStore.Service.csproj": {
+              "projectPath": "F:\\Projects\\bookstore\\BookStore\\BookStore.Service\\BookStore.Service.csproj"
             },
-            "D:\\Projects\\bookstore\\BookStore\\BookStore\\BookStore.csproj": {
-              "projectPath": "D:\\Projects\\bookstore\\BookStore\\BookStore\\BookStore.csproj"
+            "F:\\Projects\\bookstore\\BookStore\\BookStore\\BookStore.csproj": {
+              "projectPath": "F:\\Projects\\bookstore\\BookStore\\BookStore\\BookStore.csproj"
             }
           }
         }

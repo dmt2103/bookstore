@@ -51,7 +51,7 @@ namespace BookStore.Repository.Repositories
                 return null;
             }
 
-            var category = _context.Categories.Find(categoryId); 
+            var category = _context.Categories.Find(categoryId);
             category.Books = _context.Categories
                 .Where(c => c.CategoryId.Equals(categoryId))
                 .SelectMany(c => c.Books).ToList();
@@ -68,7 +68,6 @@ namespace BookStore.Repository.Repositories
                 return null;
             }
 
-            category.CategoryName = request.CategoryName;
             category.Description = request.Description;
 
             _context.Update(category);

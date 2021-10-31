@@ -10,6 +10,7 @@ namespace BookStore.Service.Book
         List<BookResponseModel> GetAllBooks(string searchString);
         BookResponseModel CreateBook(BookRequestModel request);
         BookResponseModel GetBook(Guid? request);
+        List<BookResponseModel> GetBookByTagId(Guid? request);
         BookResponseModel UpdateBook(BookRequestModel request);
         void DeleteBook(Guid request);
     }
