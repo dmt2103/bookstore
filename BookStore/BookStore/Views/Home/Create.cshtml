@@ -14,7 +14,7 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="BookName" class="control-label">Book Name</label>
-                <input asp-for="BookName" class="form-control" />
+                <input asp-for="BookName" class="form-control" required="" />
                 <span asp-validation-for="BookName" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -34,7 +34,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="CategoryId" class="control-label">Category Id</label>
-                <select asp-for="CategoryId" class="form-control" asp-items="@(new SelectList(@ViewBag.CategoryList,"CategoryId", "CategoryName"))"></select>
+                <select asp-for="CategoryId" class="form-control" asp-items="@(new SelectList(@ViewBag.CategoryList, "CategoryId", "CategoryName"))"></select>
                 <span asp-validation-for="CategoryId" class="text-danger"></span>
             </div>
             <div class="form-group">

@@ -3,6 +3,7 @@ using BookStore.Repository.Interfaces;
 using BookStore.Repository.Repositories;
 using BookStore.Service.AutoMappers;
 using BookStore.Service.Book;
+using BookStore.Service.BookTag;
 using BookStore.Service.Category;
 using BookStore.Service.Tag;
 using Microsoft.AspNetCore.Builder;
@@ -34,12 +35,14 @@ namespace BookStore
             services.AddTransient<ICategoryService, CategoryService>();
             services.AddTransient<IBookService, BookService>();
             services.AddTransient<ITagService, TagService>();
+            services.AddTransient<IBookTagService, BookTagService>();
             services.AddAutoMapper(typeof(MappingProfile).Assembly);
 
             // DI for repositories
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IBookRepository, BookRepository>();
             services.AddScoped<ITagRepository, TagRepository>();
+            services.AddScoped<IBookTagRepository, BookTagRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

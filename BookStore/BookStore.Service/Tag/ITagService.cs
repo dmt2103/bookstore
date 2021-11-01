@@ -10,5 +10,7 @@ namespace BookStore.Service.Tag
         List<TagResponseModel> GetAllTags(string searchString);
         TagResponseModel CreateTag(TagRequestModel request);
         TagResponseModel GetTag(Guid? request);
+        List<TagResponseModel> GetTagsByBookId(Guid? bookId);
+        void DeleteTag(Guid request);
     }
 }

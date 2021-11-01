@@ -8,6 +8,6 @@ namespace BookStore.Contract.ResponseModels
         public Guid CategoryId { get; set; }
         public string CategoryName { get; set; }
         public string Description { get; set; }
-        public IEnumerable<BookResponseModel> Books { get; set; }
+        public List<BookResponseModel> Books { get; set; }
     }
 }

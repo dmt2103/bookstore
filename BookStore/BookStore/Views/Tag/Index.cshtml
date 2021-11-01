@@ -24,7 +24,6 @@
             <th>
                 Tag Name
             </th>
-            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -33,10 +32,6 @@
             <tr>
                 <td>
                     <a asp-action="Details" asp-route-id="@item.TagId">@Html.DisplayFor(modelItem => item.TagName)</a>
-                </td>
-                <td>
-                    <a asp-action="Update" asp-route-id="@item.TagId">Update</a> |
-                    <a asp-action="Delete" asp-route-id="@item.TagId">Delete</a>
                 </td>
             </tr>
         }

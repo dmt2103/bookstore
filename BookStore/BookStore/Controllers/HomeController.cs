@@ -1,8 +1,11 @@
 ﻿using BookStore.Contract.RequestModels;
 using BookStore.Service.Book;
+using BookStore.Service.BookTag;
 using BookStore.Service.Category;
+using BookStore.Service.Tag;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Collections.Generic;
 
 namespace BookStore.Controllers
 {
@@ -10,11 +13,15 @@ namespace BookStore.Controllers
     {
         private readonly IBookService _bookService;
         private readonly ICategoryService _categoryService;
+        private readonly ITagService _tagService;
+        private readonly IBookTagService _bookTagService;
 
-        public HomeController(IBookService bookService, ICategoryService categoryService)
+        public HomeController(IBookService bookService, ICategoryService categoryService, ITagService tagService, IBookTagService bookTagService)
         {
             _bookService = bookService;
             _categoryService = categoryService;
+            _tagService = tagService;
+            _bookTagService = bookTagService;
         }
 
         public IActionResult Index(string searchString)
@@ -115,6 +122,60 @@ namespace BookStore.Controllers
             _bookService.DeleteBook(id);
 
             return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult UpdateTag(Guid? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var book = _bookService.GetBook(id);
+            if (book == null)
+            {
+                return NotFound();
+            }
+
+            book.Tags = _tagService.GetAllTags(string.Empty);
+
+            var addedTags = _tagService.GetTagsByBookId(id);
+
+            foreach (var item in book.Tags)
+            {
+                if (addedTags.Exists(t => t.TagId.Equals(item.TagId)))
+                {
+                    item.Selected = true;
+                }
+            }
+
+            return View(book);
+        }
+
+        [HttpPost]
+        public IActionResult UpdateTag(Guid id, List<TagRequestModel> tags)
+        {
+            if (ModelState.IsValid)
+            {
+                _bookTagService.DeleteBookTagByBookId(id);
+
+                foreach (var item in tags)
+                {
+                    if (item.Selected)
+                    {
+                        var bookTag = new BookTagRequestModel
+                        {
+                            BookId = id,
+                            TagId = item.TagId
+                        };
+                        _bookTagService.CreateTag(bookTag);
+                    }
+                }
+
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View();
         }
     }
 }

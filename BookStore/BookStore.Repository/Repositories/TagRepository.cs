@@ -54,5 +54,33 @@ namespace BookStore.Repository.Repositories
 
             return tag;
         }
+
+        public List<Tag> GetTagsByBookId(Guid? bookId)
+        {
+            if (bookId == null)
+            {
+                return null;
+            }
+
+            var tags = (from tag in _context.Tags
+                        join bookTag in _context.BookTags
+                            on tag.TagId equals bookTag.TagId
+                        where bookTag.BookId.Equals(bookId)
+                        select new Tag()
+                        {
+                            TagId = tag.TagId,
+                            TagName = tag.TagName
+                        }).ToList();
+
+            return tags;
+        }
+
+        public void DeleteTag(Guid? tagId)
+        {
+            var tag = GetTag(tagId);
+            if (tag == null) return;
+            _context.Tags.Remove(tag);
+            _context.SaveChanges();
+        }
     }
 }

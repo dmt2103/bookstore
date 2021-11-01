@@ -39,6 +39,18 @@ namespace BookStore.Repository.Data
                     Description = "Sci-Fi"
                 }
             );
+
+            context.Tags.AddRange(
+                new Tag
+                {
+                    TagName = "Action Tag"
+                },
+                new Tag
+                {
+                    TagName = "Comedy Tag"
+                }
+            );
+
             context.SaveChanges();
         }
     }

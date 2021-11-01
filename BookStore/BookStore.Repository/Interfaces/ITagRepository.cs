@@ -1,7 +1,7 @@
-﻿using System;
+﻿using BookStore.Contract.RequestModels;
 using BookStore.Domain.Models;
+using System;
 using System.Collections.Generic;
-using BookStore.Contract.RequestModels;
 
 namespace BookStore.Repository.Interfaces
 {
@@ -10,5 +10,7 @@ namespace BookStore.Repository.Interfaces
         List<Tag> GetAllTags(string searchString);
         Tag CreateTag(TagRequestModel tag);
         Tag GetTag(Guid? tagId);
+        List<Tag> GetTagsByBookId(Guid? bookId);
+        void DeleteTag(Guid? tagId);
     }
 }

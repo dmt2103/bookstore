@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BookStore.Repository.Migrations
 {
-    public partial class @new : Migration
+    public partial class test : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,7 +12,7 @@ namespace BookStore.Repository.Migrations
                 columns: table => new
                 {
                     CategoryId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    CategoryName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CategoryName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
@@ -25,7 +25,7 @@ namespace BookStore.Repository.Migrations
                 columns: table => new
                 {
                     TagId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    TagName = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    TagName = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -37,7 +37,7 @@ namespace BookStore.Repository.Migrations
                 columns: table => new
                 {
                     BookId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    BookName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    BookName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Author = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     PublishDate = table.Column<DateTime>(type: "datetime2", nullable: false),

@@ -10,6 +10,7 @@ namespace BookStore.Service.AutoMappers
             CreateMap<CategoryResponseModel, Domain.Models.Category>().ReverseMap();
             CreateMap<BookResponseModel, Domain.Models.Book>().ReverseMap();
             CreateMap<TagResponseModel, Domain.Models.Tag>().ReverseMap();
+            CreateMap<BookTagResponseModel, Domain.Models.BookTag>().ReverseMap();
         }
     }
 }

@@ -41,5 +41,18 @@ namespace BookStore.Service.Tag
 
             return tag;
         }
+
+        public List<TagResponseModel> GetTagsByBookId(Guid? bookId)
+        {
+            var res = _tagRepository.GetTagsByBookId(bookId);
+            var tags = _mapper.Map<List<Domain.Models.Tag>, List<TagResponseModel>>(res);
+
+            return tags;
+        }
+
+        public void DeleteTag(Guid request)
+        {
+            _tagRepository.DeleteTag(request);
+        }
     }
 }

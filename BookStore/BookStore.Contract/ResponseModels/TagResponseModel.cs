@@ -7,6 +7,7 @@ namespace BookStore.Contract.ResponseModels
     {
         public Guid TagId { get; set; }
         public string TagName { get; set; }
-        public IEnumerable<BookResponseModel> Books { get; set; }
+        public List<BookResponseModel> Books { get; set; }
+        public bool Selected { get; set; }
     }
 }
