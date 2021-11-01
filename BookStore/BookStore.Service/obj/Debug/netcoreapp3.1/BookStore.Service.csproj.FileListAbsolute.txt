@@ -46,6 +46,5 @@ D:\Projects\bookstore\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookSt
 D:\Projects\bookstore\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.AssemblyInfoInputs.cache
 D:\Projects\bookstore\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.AssemblyInfo.cs
 D:\Projects\bookstore\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.csproj.CoreCompileInputs.cache
-D:\Projects\bookstore\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.csproj.CopyComplete
 D:\Projects\bookstore\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.dll
 D:\Projects\bookstore\BookStore\BookStore.Service\obj\Debug\netcoreapp3.1\BookStore.Service.pdb

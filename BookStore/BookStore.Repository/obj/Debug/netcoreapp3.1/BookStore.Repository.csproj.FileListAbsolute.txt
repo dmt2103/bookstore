@@ -47,7 +47,6 @@ D:\Projects\bookstore\BookStore\BookStore.Repository\obj\Debug\netcoreapp3.1\Boo
 D:\Projects\bookstore\BookStore\BookStore.Repository\obj\Debug\netcoreapp3.1\BookStore.Repository.AssemblyInfoInputs.cache
 D:\Projects\bookstore\BookStore\BookStore.Repository\obj\Debug\netcoreapp3.1\BookStore.Repository.AssemblyInfo.cs
 D:\Projects\bookstore\BookStore\BookStore.Repository\obj\Debug\netcoreapp3.1\BookStore.Repository.csproj.CoreCompileInputs.cache
-D:\Projects\bookstore\BookStore\BookStore.Repository\obj\Debug\netcoreapp3.1\BookStore.Repository.csproj.CopyComplete
 D:\Projects\bookstore\BookStore\BookStore.Repository\obj\Debug\netcoreapp3.1\BookStore.Repository.dll
 D:\Projects\bookstore\BookStore\BookStore.Repository\obj\Debug\netcoreapp3.1\BookStore.Repository.pdb
 D:\Projects\bookstore\BookStore\BookStore.Repository\obj\Debug\netcoreapp3.1\BookStore.Repository.genruntimeconfig.cache
