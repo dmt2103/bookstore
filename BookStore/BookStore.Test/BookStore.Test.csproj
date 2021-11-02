@@ -22,4 +22,8 @@
     <ProjectReference Include="..\BookStore\BookStore.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="RepositoryTests\" />
+  </ItemGroup>
+
 </Project>
