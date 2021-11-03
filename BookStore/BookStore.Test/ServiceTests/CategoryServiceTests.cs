@@ -2,8 +2,8 @@ using AutoMapper;
 using BookStore.Contract.RequestModels;
 using BookStore.Contract.ResponseModels;
 using BookStore.Domain.Models;
-using BookStore.Repository.Interfaces;
 using BookStore.Service.Category;
+using BookStore.Test.MockRepositories;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using System;
@@ -15,7 +15,7 @@ namespace BookStore.Test.ServiceTests
     public class CategoryServiceTests
     {
         [TestMethod]
-        public void TestGetAllCategories()
+        public void CategoryService_GetAllCategories_Valid()
         {
             // Arrange
             var allCategories = new List<Category>
@@ -29,21 +29,11 @@ namespace BookStore.Test.ServiceTests
                 }
             };
 
-            var mockCategoryRepository = new Mock<ICategoryRepository>();
-            mockCategoryRepository.Setup(repository => repository.GetAllCategories(It.IsAny<string>()))
-                .Returns(allCategories);
-
+            var mockCategoryRepository = new MockCategoryRepository().MockGetAllCategories(allCategories);
             var mockMapper = new Mock<IMapper>();
-            mockMapper.Setup(mapper => mapper.Map<List<Category>, List<CategoryResponseModel>>(allCategories))
+            mockMapper.Setup(x => x.Map<List<Category>, List<CategoryResponseModel>>(allCategories))
                 .Returns(new List<CategoryResponseModel>
                 {
-                    new CategoryResponseModel
-                    {
-                        CategoryId = Guid.NewGuid(),
-                        CategoryName = "CategoryName",
-                        Description = "Description",
-                        Books = new List<BookResponseModel>()
-                    },
                     new CategoryResponseModel
                     {
                         CategoryId = Guid.NewGuid(),
@@ -56,21 +46,20 @@ namespace BookStore.Test.ServiceTests
             var categoryService = new CategoryService(mockCategoryRepository.Object, mockMapper.Object);
 
             // Act
-            var results = categoryService.GetAllCategories("x");
+            var results = categoryService.GetAllCategories(new string(""));
 
             // Assert
-            Assert.AreEqual(2, results.Count);
+            Assert.AreEqual(1, results.Count);
 
-            mockCategoryRepository.Verify(repository => repository.GetAllCategories("x"), Times.Once);
+            mockCategoryRepository.VerifyGetAllCategories(Times.Once());
 
-            mockMapper.Verify(repository => repository.Map<List<Category>, List<CategoryResponseModel>>(allCategories), Times.Once);
+            mockMapper.Verify(x => x.Map<List<Category>, List<CategoryResponseModel>>(allCategories), Times.Once);
         }
 
         [TestMethod]
-        public void TestCreateCategory()
+        public void CategoryService_CreateCategory_Valid()
         {
             // Arrange
-            var categoryRequestModel = new CategoryRequestModel();
             var category = new Category
             {
                 CategoryId = Guid.NewGuid(),
@@ -79,29 +68,21 @@ namespace BookStore.Test.ServiceTests
                 Books = new List<Book>()
             };
 
-            var mockCategoryRepository = new Mock<ICategoryRepository>();
-            mockCategoryRepository.Setup(repository => repository.CreateCategory(categoryRequestModel))
-                .Returns(category);
+            var mockCategoryRepository = new MockCategoryRepository().MockCreateCategory(category);
 
             var mockMapper = new Mock<IMapper>();
-            mockMapper.Setup(mapper => mapper.Map<Category, CategoryResponseModel>(category))
-                .Returns(new CategoryResponseModel
-                {
-                    CategoryId = Guid.NewGuid(),
-                    CategoryName = "CategoryName",
-                    Description = "Description",
-                    Books = new List<BookResponseModel>()
-                });
+            mockMapper.Setup(x => x.Map<Category, CategoryResponseModel>(category))
+                .Returns(new CategoryResponseModel());
 
             var categoryService = new CategoryService(mockCategoryRepository.Object, mockMapper.Object);
 
             // Act
-            var results = categoryService.CreateCategory(categoryRequestModel);
+            var results = categoryService.CreateCategory(new CategoryRequestModel());
 
             // Assert
-            mockCategoryRepository.Verify(repository => repository.CreateCategory(categoryRequestModel), Times.Once);
+            mockCategoryRepository.VerifyCreateCategory(Times.Once());
 
-            mockMapper.Verify(repository => repository.Map<Category, CategoryResponseModel>(category), Times.Once);
+            mockMapper.Verify(x => x.Map<Category, CategoryResponseModel>(category), Times.Once);
         }
     }
 }

@@ -14,6 +14,7 @@
         <form asp-action="UpdateTag">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="BookId" />
+            <input type="hidden" asp-for="BookName" />
             <div class="form-group">
                 <label asp-for="BookName" class="control-label">Book Name</label>
                 <input asp-for="BookName" class="form-control" disabled />
@@ -28,6 +29,7 @@
                 }
                 @for (var i = 0; i < Model.Tags.Count(); i++)
                 {
+                    @Html.HiddenFor(x => x.Tags[i].TagName)
                     @Html.HiddenFor(x => x.Tags[i].TagId)
                     @Html.CheckBoxFor(x => x.Tags[i].Selected)
                     @Html.LabelFor(x => x.Tags[i].Selected, Model.Tags[i].TagName)

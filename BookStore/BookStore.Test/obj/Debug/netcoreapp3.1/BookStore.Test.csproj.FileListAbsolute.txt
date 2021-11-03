@@ -54,6 +54,7 @@ D:\Projects\bookstore\BookStore\BookStore.Test\bin\Debug\netcoreapp3.1\Microsoft
 D:\Projects\bookstore\BookStore\BookStore.Test\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 D:\Projects\bookstore\BookStore\BookStore.Test\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\Projects\bookstore\BookStore\BookStore.Test\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+D:\Projects\bookstore\BookStore\BookStore.Test\bin\Debug\netcoreapp3.1\nunit.framework.dll
 D:\Projects\bookstore\BookStore\BookStore.Test\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 D:\Projects\bookstore\BookStore\BookStore.Test\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
 D:\Projects\bookstore\BookStore\BookStore.Test\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll

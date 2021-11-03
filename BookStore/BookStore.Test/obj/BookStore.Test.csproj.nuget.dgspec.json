@@ -327,6 +327,10 @@
               "target": "Package",
               "version": "[4.16.1, )"
             },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.2, )"
+            },
             "coverlet.collector": {
               "target": "Package",
               "version": "[3.0.2, )"

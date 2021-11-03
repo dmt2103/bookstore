@@ -13,6 +13,7 @@
         <form asp-action="Update">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="BookId" />
+            <input type="hidden" asp-for="BookName" />
             <div class="form-group">
                 <label asp-for="BookName" class="control-label">Book Name</label>
                 <input asp-for="BookName" class="form-control" disabled />

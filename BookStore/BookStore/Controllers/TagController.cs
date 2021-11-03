@@ -39,7 +39,7 @@ namespace BookStore.Controllers
             if (!ModelState.IsValid)
             {
 
-                return View(tag);
+                return View();
             }
 
             _tagService.CreateTag(tag);

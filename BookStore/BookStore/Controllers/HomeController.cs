@@ -42,7 +42,10 @@ namespace BookStore.Controllers
         [HttpPost]
         public IActionResult Create(BookRequestModel book)
         {
-            if (!ModelState.IsValid) return View(book);
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
 
             _bookService.CreateBook(book);
 
@@ -97,7 +100,7 @@ namespace BookStore.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            return View(book);
+            return RedirectToAction(nameof(Update));
         }
 
         public IActionResult Delete(Guid? id)

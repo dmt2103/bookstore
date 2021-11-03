@@ -20,7 +20,6 @@ F:\Projects\bookstore\BookStore\BookStore.Contract\obj\Debug\netcoreapp3.1\BookS
 D:\Projects\bookstore\BookStore\BookStore.Contract\bin\Debug\netcoreapp3.1\BookStore.Contract.deps.json
 D:\Projects\bookstore\BookStore\BookStore.Contract\bin\Debug\netcoreapp3.1\BookStore.Contract.dll
 D:\Projects\bookstore\BookStore\BookStore.Contract\bin\Debug\netcoreapp3.1\BookStore.Contract.pdb
-D:\Projects\bookstore\BookStore\BookStore.Contract\obj\Debug\netcoreapp3.1\BookStore.Contract.csproj.AssemblyReference.cache
 D:\Projects\bookstore\BookStore\BookStore.Contract\obj\Debug\netcoreapp3.1\BookStore.Contract.GeneratedMSBuildEditorConfig.editorconfig
 D:\Projects\bookstore\BookStore\BookStore.Contract\obj\Debug\netcoreapp3.1\BookStore.Contract.AssemblyInfoInputs.cache
 D:\Projects\bookstore\BookStore\BookStore.Contract\obj\Debug\netcoreapp3.1\BookStore.Contract.AssemblyInfo.cs

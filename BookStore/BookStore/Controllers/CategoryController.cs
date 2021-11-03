@@ -32,8 +32,7 @@ namespace BookStore.Controllers
         {
             if (!ModelState.IsValid)
             {
-
-                return View(category);
+                return View();
             }
 
             _categoryService.CreateCategory(category);
@@ -87,7 +86,7 @@ namespace BookStore.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            return View(category);
+            return RedirectToAction(nameof(Update));
         }
 
         public IActionResult Delete(Guid? id)
