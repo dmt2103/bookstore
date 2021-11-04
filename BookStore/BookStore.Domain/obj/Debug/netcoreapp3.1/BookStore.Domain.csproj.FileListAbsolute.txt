@@ -20,6 +20,7 @@ F:\Projects\bookstore\BookStore\BookStore.Domain\obj\Debug\netcoreapp3.1\BookSto
 D:\Projects\bookstore\BookStore\BookStore.Domain\bin\Debug\netcoreapp3.1\BookStore.Domain.deps.json
 D:\Projects\bookstore\BookStore\BookStore.Domain\bin\Debug\netcoreapp3.1\BookStore.Domain.dll
 D:\Projects\bookstore\BookStore\BookStore.Domain\bin\Debug\netcoreapp3.1\BookStore.Domain.pdb
+D:\Projects\bookstore\BookStore\BookStore.Domain\obj\Debug\netcoreapp3.1\BookStore.Domain.csproj.AssemblyReference.cache
 D:\Projects\bookstore\BookStore\BookStore.Domain\obj\Debug\netcoreapp3.1\BookStore.Domain.GeneratedMSBuildEditorConfig.editorconfig
 D:\Projects\bookstore\BookStore\BookStore.Domain\obj\Debug\netcoreapp3.1\BookStore.Domain.AssemblyInfoInputs.cache
 D:\Projects\bookstore\BookStore\BookStore.Domain\obj\Debug\netcoreapp3.1\BookStore.Domain.AssemblyInfo.cs

@@ -89,7 +89,7 @@ namespace BookStore.Controllers
             return RedirectToAction(nameof(Update));
         }
 
-        public IActionResult Delete(Guid? id)
+        public IActionResult DeleteConfirm(Guid? id)
         {
             if (id == null)
             {
@@ -106,9 +106,9 @@ namespace BookStore.Controllers
         }
 
         [HttpPost]
-        public IActionResult Delete(Guid id)
+        public IActionResult Delete(Guid categoryId)
         {
-            _categoryService.DeleteCategory(id);
+            _categoryService.DeleteCategory(categoryId);
 
             return RedirectToAction(nameof(Index));
         }

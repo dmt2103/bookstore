@@ -52,6 +52,12 @@ namespace BookStore.Repository.Repositories
             }
 
             var category = _context.Categories.Find(categoryId);
+
+            if (category == null)
+            {
+                return null;
+            }
+
             category.Books = _context.Categories
                 .Where(c => c.CategoryId.Equals(categoryId))
                 .SelectMany(c => c.Books).ToList();

@@ -65,7 +65,7 @@ namespace BookStore.Controllers
             return View(tag);
         }
 
-        public IActionResult Delete(Guid? id)
+        public IActionResult DeleteConfirm(Guid? id)
         {
             if (id == null)
             {
@@ -82,10 +82,10 @@ namespace BookStore.Controllers
         }
 
         [HttpPost]
-        public IActionResult Delete(Guid id)
+        public IActionResult Delete(Guid tagId)
         {
-            _bookTagService.DeleteBookTagByTagId(id);
-            _tagService.DeleteTag(id);
+            _bookTagService.DeleteBookTagByTagId(tagId);
+            _tagService.DeleteTag(tagId);
 
             return RedirectToAction(nameof(Index));
         }

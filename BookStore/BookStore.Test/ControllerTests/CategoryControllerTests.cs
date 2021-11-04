@@ -284,7 +284,7 @@ namespace BookStore.Test.ControllerTests
         }
 
         [TestMethod]
-        public void CategoryController_Delete_Get_IdNull()
+        public void CategoryController_DeleteConfirm_IdNull()
         {
             // Arrange
             var mockCategoryService = new MockCategoryService().MockGetCategory(new CategoryResponseModel());
@@ -292,7 +292,7 @@ namespace BookStore.Test.ControllerTests
             var categoryController = new CategoryController(mockCategoryService.Object);
 
             // Act
-            var result = categoryController.Delete(null);
+            var result = categoryController.DeleteConfirm(null);
 
             // Assert
             AssertNUnit.IsAssignableFrom<NotFoundResult>(result);
@@ -300,50 +300,50 @@ namespace BookStore.Test.ControllerTests
             mockCategoryService.VerifyGetCategory(Times.Never());
         }
 
-        //[TestMethod]
-        //public void CategoryController_Delete_Get_NoCategories()
-        //{
-        //    // Arrange
-        //    var mockCategoryService = new MockCategoryService().MockGetCategory(null);
+        [TestMethod]
+        public void CategoryController_DeleteConfirm_NoCategories()
+        {
+            // Arrange
+            var mockCategoryService = new MockCategoryService().MockGetCategory(null);
 
-        //    var categoryController = new CategoryController(mockCategoryService.Object);
+            var categoryController = new CategoryController(mockCategoryService.Object);
 
-        //    // Act
-        //    var result = categoryController.Delete(Guid.NewGuid());
+            // Act
+            var result = categoryController.DeleteConfirm(Guid.NewGuid());
 
-        //    // Assert
-        //    AssertNUnit.IsAssignableFrom<NotFoundResult>(result);
+            // Assert
+            AssertNUnit.IsAssignableFrom<NotFoundResult>(result);
 
-        //    mockCategoryService.VerifyGetCategory(Times.Once());
-        //}
-
-        //[TestMethod]
-        //public void CategoryController_Delete_Get_Valid()
-        //{
-        //    // Arrange
-        //    var categoryResponse = new CategoryResponseModel
-        //    {
-        //        CategoryId = Guid.NewGuid(),
-        //        CategoryName = "CategoryName",
-        //        Description = "Description",
-        //        Books = new List<BookResponseModel>()
-        //    };
-
-        //    var mockCategoryService = new MockCategoryService().MockGetCategory(categoryResponse);
-
-        //    var categoryController = new CategoryController(mockCategoryService.Object);
-
-        //    // Act
-        //    var result = categoryController.Delete(Guid.NewGuid());
-
-        //    // Assert
-        //    AssertNUnit.IsAssignableFrom<ViewResult>(result);
-
-        //    mockCategoryService.VerifyGetCategory(Times.Once());
-        //}
+            mockCategoryService.VerifyGetCategory(Times.Once());
+        }
 
         [TestMethod]
-        public void CategoryController_Delete_Post_Valid()
+        public void CategoryController_DeleteConfirm_Valid()
+        {
+            // Arrange
+            var categoryResponse = new CategoryResponseModel
+            {
+                CategoryId = Guid.NewGuid(),
+                CategoryName = "CategoryName",
+                Description = "Description",
+                Books = new List<BookResponseModel>()
+            };
+
+            var mockCategoryService = new MockCategoryService().MockGetCategory(categoryResponse);
+
+            var categoryController = new CategoryController(mockCategoryService.Object);
+
+            // Act
+            var result = categoryController.DeleteConfirm(Guid.NewGuid());
+
+            // Assert
+            AssertNUnit.IsAssignableFrom<ViewResult>(result);
+
+            mockCategoryService.VerifyGetCategory(Times.Once());
+        }
+
+        [TestMethod]
+        public void CategoryController_Delete_Valid()
         {
             // Arrange
             var mockCategoryService = new MockCategoryService().MockDeleteCategory();

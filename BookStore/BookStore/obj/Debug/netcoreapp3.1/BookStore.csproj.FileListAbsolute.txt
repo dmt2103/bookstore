@@ -274,12 +274,12 @@ D:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\BookStore.TagH
 D:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\BookStore.TagHelpers.output.cache
 D:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\BookStore.RazorCoreGenerate.cache
 D:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Category\Create.cshtml.g.cs
-D:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Category\Delete.cshtml.g.cs
+D:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Category\DeleteConfirm.cshtml.g.cs
 D:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Category\Details.cshtml.g.cs
 D:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Category\Index.cshtml.g.cs
 D:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Category\Update.cshtml.g.cs
 D:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Create.cshtml.g.cs
-D:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Delete.cshtml.g.cs
+D:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\DeleteConfirm.cshtml.g.cs
 D:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Details.cshtml.g.cs
 D:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 D:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Update.cshtml.g.cs
@@ -288,7 +288,7 @@ D:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Sh
 D:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 D:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 D:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Tag\Create.cshtml.g.cs
-D:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Tag\Delete.cshtml.g.cs
+D:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Tag\DeleteConfirm.cshtml.g.cs
 D:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Tag\Details.cshtml.g.cs
 D:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Tag\Index.cshtml.g.cs
 D:\Projects\bookstore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
